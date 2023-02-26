@@ -11,14 +11,6 @@ import (
 	"strings"
 )
 
-//Connect to ably
-
-//Connect to a channel(chat room)
-
-//Publish a message to everyone in the channel(chat room)
-
-//Show if a user left the channel(chat room)
-
 func main() {
 	err := godotenv.Load()
 	if err != nil {
@@ -55,7 +47,7 @@ func main() {
 			err = fmt.Errorf("publishing to topic: %w", err)
 			fmt.Println(err)
 		} else {
-			fmt.Printf("Published message: %v\n", text)
+			fmt.Printf("Published message: %v\n", text)git
 		}
 	}
 }
